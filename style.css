@@ -338,6 +338,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     align-items: start;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* left */
