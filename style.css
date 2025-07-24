@@ -200,10 +200,83 @@
     margin-bottom: 20px;
 }
 
+/* Latest Deals Section Styles */
+.latest-deals{
+    text-align: center;
+}
+.section-title1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
 
+.section-dsc1{
+    max-width: 880px;
+    margin: auto;
+}
 
+    /* deals container */
+.deals-container{
+    margin: 120px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 30px;
+}
 
+.deals-left{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
 
+.deal-box{
+    position: relative;
+    /* height: 300px; */
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+}
+.title1{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 19px;
+}
+.title2{
+    color: white;
+}
+.title3{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 19px;
+}
+.title4{
+    color: white;
+    font-size: 28px;
+}
+
+   /* background images */
+.deal-1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.40)), url('images/deal-bloom.png');
+    width: 366px;
+    height: 206px;
+}
+.deal-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.40)), url('images/deal-ana.png');
+    width: 366px;
+    height: 206px;
+}
+.deal-3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.40)), url('images/deal-zabo.png');
+    width: 700px;
+    height: 440px;
+}
 
 
 
@@ -273,7 +346,7 @@
         display: none;
     }
 
-    
+
     .plants-text ul{
        padding-left: 10px;
     }
@@ -286,4 +359,33 @@
        margin-bottom: 16px;
        padding-left: 0;
     }
+      /* Latest Deals Section Styles */
+    .deals-container{
+        margin-top: 50px;
+        margin-bottom: 40px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .deals-left{
+        grid-template-rows: none;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section-title1{
+       font-size: 24px;
+    }
+
+    .title1, .title3{
+        font-size: 20px;
+    }
+    .title2, .title4{
+        font-size: 16px;
+    }
+    .deal-box{
+        width: 100%;
+        height: 184px;
+    }
+    
 }
