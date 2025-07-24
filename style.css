@@ -55,6 +55,19 @@
      list-style: none;
      gap: 48px;
 }
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E95A08;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
 
 .nav-links ul li a{
     text-decoration: none;
@@ -135,9 +148,57 @@
     color: white;
     border: none;
     cursor: pointer;
+    transition: 1s ease;
+}
+.add-btn:hover{
+    background-color: black;
 }
 
+/* Flower & Plants Lover section styles */
+.plants-lover-section{
+    padding-top: 210px;
+    padding-bottom: 130px;
+}
+.plants-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+          /* left content */
+.plants-img{
+    position: relative;
+    width: 100%;
+    height: auto;
 
+}
+.plants-img .plants-image{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trusted-badge{
+    position: absolute;
+    top: -140px;
+    right: -100px;
+    width: 280px;
+    height: auto;
+}
+
+       /* Right content */
+.plants-text h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.plants-text ul{
+    padding-left: 40px;
+}
+.plants-text ul li{
+    margin-bottom: 20px;
+}
 
 
 
@@ -176,7 +237,7 @@
         order: -1;
     }
     .cart{
-        font-size: 24px;
+        font-size: 20px;
     }
 
        /* product section */
@@ -197,5 +258,32 @@
     .add-btn{
         width: 100%;
         height: 50px;
+    }
+
+      /* Flower & Plants Lover section */
+    .plants-lover-section{
+        padding-top: 40px;
+        padding-bottom: 140px;
+    }
+    .plants-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .trusted-badge{
+        display: none;
+    }
+
+    
+    .plants-text ul{
+       padding-left: 10px;
+    }
+    .plants-text ul li{
+        margin-bottom: 16px;
+    }
+    .plants-text h2{
+       font-size: 24px;
+       font-weight: bold;
+       margin-bottom: 16px;
+       padding-left: 0;
     }
 }
